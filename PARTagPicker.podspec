@@ -17,13 +17,17 @@ Pod::Spec.new do |s|
   s.author             = { "Paul Rolfe" => "paul.a.rolfe@gmail.com" }
   s.social_media_url   = "http://twitter.com/thepaulrolfe"
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://github.com/paulrolfe/PARTagPicker.git", :tag => "#{s.version}" }
+  s.source       = { :git => 'https://github.com/castleton-ios-dev/PARTagPicker.git', :branch => 'fix_ios7_compile_warnings' }
   s.source_files  = "PARTagPicker/Classes/*.{h,m}"
   s.resource_bundle = {"PARTagPicker" => "PARTagPicker/Resources/*.xib"}
   s.framework  = "UIKit"
   s.requires_arc = true
   s.description  = <<-DESC
   # PARTagPicker
+
+  ####
+  This is a forked pod in order to fix the compile errors on Xcode 9. Changes the deploy target to 9 and above
+  ####
 
   This pod provides a view controller for choosing and creating tags in the style of wordpress or tumblr. This tag picker was originally used in the [Intrepid Pursuits](http://intrepid.io) app, Slate.
 
